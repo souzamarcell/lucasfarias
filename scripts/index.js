@@ -6,6 +6,10 @@ let firstCard, secondCard;
 let movements = 0;
 let winContador = 0;
 
+// Arrumar o menu vitoria
+// document.querySelector("#vitoria").style.display = "block";
+// document.querySelector("#movimentosvitoria").innerHTML = movements;
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -15,7 +19,7 @@ function flipCard() {
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
-    console.log("firstCard: ",firstCard);
+    console.log("firstCard: ", firstCard);
     return;
   }
   // console.log(winContador);
@@ -72,8 +76,8 @@ function resetBoard() {
 }
 
 function flipCardsFirst() {
-    firstCard.classList.add("flip");
-    secondCard.classList.add("flip");
+  firstCard.classList.add("flip");
+  secondCard.classList.add("flip");
 }
 
 
