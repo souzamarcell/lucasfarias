@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Memoria PROLAM</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./src/assets/icon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/card.css" />
+  <link rel="stylesheet" href="styles/win.css" />
+  <!--Estilo da tela de vitória-->
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Jogo da Memória: Os Souzas</h1>
+    <nav>
+      <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+    </nav>
+  </header>
+  <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+  <div id="vitoria">
+    <div id="container">
+      <h1>Parabéns!</h1>
+      <p>Você encontrou todos os pares com</p>
+      <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+      <a href="index.html">Jogar Novamente</a>
+    </div>
+  </div>
+  <!--FIM-ALTERAÇÃO*-->
+  <section id="responsivo">
+    <h2>Erros <span id="movimentos2">0</span></h2>
+    <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+    <a href="index.html">Reiniciar</a>
+  </section>
+
+  <div class="corpo">
+    <section id="esq">
+      <h2>Erros <span id="movimentos">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+      <a href="index.html">Reiniciar</a>
+    </section>
+    <section class="jogo">
+      <div class="card" data-nome="figureOne">
+        <img class="frente" src="./src/assets/figureA1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureOne">
+        <img class="frente" src="./src/assets/figureA2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureTwo">
+        <img class="frente" src="./src/assets/figureB1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureTwo">
+        <img class="frente" src="./src/assets/figureB2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureThree">
+        <img class="frente" src="./src/assets/figureC1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureThree">
+        <img class="frente" src="./src/assets/figureC2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureFour">
+        <img class="frente" src="./src/assets/figureD1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureFour">
+        <img class="frente" src="./src/assets/figureD2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureFive">
+        <img class="frente" src="./src/assets/figureE1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureFive">
+        <img class="frente" src="./src/assets/figureE2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureSix">
+        <img class="frente" src="./src/assets/figureF1.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+      <div class="card" data-nome="figureSix">
+        <img class="frente" src="./src/assets/figureF2.jpg" alt="card" />
+        <img class="verso" src="./src/assets/capa.jpg" alt="card" />
+      </div>
+    </section>
+    <section id="dir"></section>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/marcellsouza">
+          <h3>@SOUZAS - GRUPO PRO</h3>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
